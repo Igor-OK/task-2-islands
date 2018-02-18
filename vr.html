@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задание 2 - визуализация</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js"></script>
+	<!-- <script src="aframe-master.min.js"></script> -->
+</head>
+<body>
+
+	<a-scene>
+    
+
+      <a-assets>
+        <a-asset-item id="exoItalicFont" src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725"></a-asset-item>
+      </a-assets>
+
+
+        <a-entity id="header" position="-7 5 -10" text-geometry="value: Острова; font: #exoItalicFont; style: italic; size: 0.8; weight: bold; height: 0;"
+                  material="shader: flat; color: white"></a-entity>
+
+		<a-sky src="sea.jpg"></a-sky>
+
+	</a-scene>
+
+	<script src="js/vr-script.js"></script>
+
+
+
+
+
+</body>
+</html>
